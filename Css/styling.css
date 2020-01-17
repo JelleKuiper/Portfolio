@@ -1,0 +1,393 @@
+/* Kleurenpalette
+Beige #E1B595
+Bruin #6B4835
+Lichtzwart #302C2E
+Roomwit #E0D4C9
+
+Hoe hoger hoe witter, hoe lager hoe zwarter.
+Grijswit (60%) #A5978C
+Grijswit (50%) #8F7D70
+Grijswit (25%) #473F38
+*/
+
+/* For the general stuff. */
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #A5978C;
+  font-family: 'Roboto Mono', monospace;
+  color: #302C2E;
+  height: 100vh;
+}
+
+h1, h2, h3{
+  font-family: 'Raleway', sans-serif;
+}
+
+h1{
+  text-shadow: 2px 2px #FFFFFF;
+}
+
+.border{
+  border: solid 1px #6B4835;
+}
+
+.align-gradient{
+  text-align: center;
+
+  background: rgb(165,151,140);
+  background: -moz-linear-gradient(90deg, rgba(165,151,140,1) 0%, rgba(224,212,201,1) 25%, rgba(224,212,201,1) 60%, rgba(165,151,140,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(165,151,140,1) 0%, rgba(224,212,201,1) 25%, rgba(224,212,201,1) 60%, rgba(165,151,140,1) 100%);
+  background: linear-gradient(90deg, rgba(165,151,140,1) 0%, rgba(224,212,201,1) 25%, rgba(224,212,201,1) 60%, rgba(165,151,140,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a5978c",endColorstr="#a5978c",GradientType=1);
+}
+
+.pic-me{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+/* The color change animation on page load */
+.white2black{
+  animation: color-change 3s 1;
+  color: #E0D4C9;
+}
+
+@keyframes color-change {
+  0%{color: #E0D4C9; text-shadow: 0 0 4px #302C2E;}
+  33%{color: white; font-size: 24px; text-shadow: 0 0 4px #302C2E;}
+  66%{color: white; font-size: 28px; } /* Needs @media */
+  100%{color: #E0D4C0; font-size: 24px;}
+}
+
+.white2black2{
+  animation: color-change2 3s 1 2s;
+  color: #E0D4C9;
+}
+
+@keyframes color-change2 {
+  0%{color: #E0D4C9; text-shadow: 0 0 4px #302C2E;}
+  33%{color: white; font-size: 24px; text-shadow: 0 0 4px #302C2E;}
+  66%{color: white; font-size: 28px; } /* Needs @media */
+  100%{color: #E0D4C0; font-size: 24px;}
+}
+
+/* For all divs, Top to bottom and everything in them. */
+/* For the container. */
+.container{
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* About me */
+.about-me{
+  height: 800px;
+  text-align: center;
+  vertical-align: text-top;
+
+  background: rgb(165,151,140);
+  background: -moz-radial-gradient(circle, rgba(165,151,140,1) 0%, rgba(224,212,201,1) 25%, rgba(224,212,201,1) 60%, rgba(165,151,140,1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(165,151,140,1) 0%, rgba(224,212,201,1) 25%, rgba(224,212,201,1) 60%, rgba(165,151,140,1) 100%);
+  background: radial-gradient(circle, rgba(165,151,140,1) 0%, rgba(224,212,201,1) 25%, rgba(224,212,201,1) 60%, rgba(165,151,140,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a5978c",endColorstr="#a5978c",GradientType=1);
+}
+
+.about-me-text{
+  color: #E0D4C9;
+  text-shadow:
+  0 0 4px #302C2E,
+  25px 0 25px #302C2E,
+  -25px 0 25px #302C2E,
+  50px 0 50px #302C2E,
+  -50px 0 50px #302C2E;
+}
+
+.top-text{
+  margin-top: 150px;
+  margin-bottom: 120px;
+}
+
+.bot-text{
+  margin-top: 120px;
+}
+
+@media (max-width: 992px){
+  .container{
+    width: 80%;
+  }
+  .about-me{
+    height: 660px;
+  }
+  .top-text{
+    margin-top: 100px;
+    margin-bottom: 80px;
+  }
+  .bot-text{
+    margin-top: 90px;
+  }
+}
+
+@media (max-width: 576px){
+  .container{
+    width: 100%;
+  }
+  .about-me{
+    height: 500px;
+  }
+  .top-text{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .bot-text{
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 293px){
+  .about-me{
+    height: 550px;
+  }
+}
+
+/* Navbar */
+.navbar{
+  padding: 30px;
+}
+
+.sticky{
+  position: sticky;
+  top: 0;
+}
+
+.navlink{
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid white;
+  background-color: #302C2E;
+  color: white;
+}
+
+.navlink:hover{
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  border: 2px solid #8F7D70;
+  background-color: #E0D4C9;
+  color: #473F38;
+  font-weight: bold;
+}
+
+.top-btn-width{
+  width: 20%;
+}
+
+.projects-btn-width{
+  width: 25%
+}
+
+.skills-btn-width{
+  width: 30%
+}
+
+.contact-btn-width{
+  width: 25%
+}
+
+.cv-btn-width{
+  width: 20%
+}
+
+@media (max-width: 510px){
+  .top-btn-width{
+    width: 20%;
+  }
+
+  .projects-btn-width{
+    width: 50%
+  }
+
+  .skills-btn-width{
+    width: 90%
+  }
+
+  .contact-btn-width{
+    width: 50%;
+  }
+
+  .cv-btn-width{
+    width: 20%
+  }
+}
+
+/* My projects */
+.projects{
+  padding: 30px;
+}
+
+.projects-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.projects-row{
+  width: 70%;
+}
+
+.projects-col{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.projects-text{
+  width: 80%;
+}
+
+.projects-pic{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.projects-margin{
+  margin: 0 0 50px 0;
+}
+
+.projects-margin2{
+  margin: 0 0 100px 0;
+}
+
+.icon{
+  height: 26px;
+  margin: 0 0 -7px 0;
+}
+
+@media (max-width: 1200px){
+  .projects-row{
+    width: 80%;
+  }
+
+  .projects-text{
+    width: 90%;
+  }
+}
+
+@media (max-width: 992px){
+  .projects-row{
+    width: 90%;
+  }
+
+  .projects-text{
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px){
+  .projects-row{
+    width: 100%;
+  }
+
+  .projects-col{
+    display: block;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+
+  .projects-responsive{
+    display: block;
+  }
+
+  .projects-pic{
+    margin: -30px auto 15px auto;
+  }
+
+  .projects-margin2{
+    margin: 0 0 70px 0;
+  }
+}
+
+/* My skills */
+.skills{
+  text-align: center;
+  padding: 30px;
+}
+
+table{ /* Needs @media MAYBE*/
+  margin: 50px auto;
+  width: 85%;
+}
+
+td{
+  border: 1px solid #8F7D70;
+  padding: 10px 20px;
+}
+
+.firstTd{
+  width: 25%;
+  text-align: center;
+}
+
+.secondTd{
+  width: 75%;
+  text-align: left;
+}
+
+@media (max-width: 768px){
+  table{ /* Needs @media MAYBE*/
+    margin: 50px auto 10px auto;
+    width: 95%;
+  }
+
+  .skills{
+    padding: 10px;
+  }
+
+  td{
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 600px){
+  .skills{
+    padding: 5px;
+  }
+
+  table{ /* Needs @media MAYBE*/
+    margin: 30px auto 10px auto;
+    width: 80%;
+  }
+
+  td{
+    padding: 0;
+    display: block;
+  }
+
+  .firstTd{
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .secondTd{
+    width: 100%;
+    text-align: left;
+    font-size: 12px;
+  }
+}
+
+/* Contact */
+.contact{
+  padding: 30px;
+}
+
+/* CV */
+.cv{
+  padding: 30px;
+}
