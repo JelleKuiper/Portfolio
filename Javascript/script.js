@@ -11,7 +11,7 @@ var botText = document.getElementById("botText");
 //For sticky navbar.
 window.onscroll = function(){
   if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+    navbar.classList.add("sticky");
   } else {
     navbar.classList.remove("sticky");
   }

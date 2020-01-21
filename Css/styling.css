@@ -59,7 +59,7 @@ h1{
 @keyframes color-change {
   0%{color: #E0D4C9; text-shadow: 0 0 4px #302C2E;}
   33%{color: white; font-size: 24px; text-shadow: 0 0 4px #302C2E;}
-  66%{color: white; font-size: 28px; } /* Needs @media */
+  66%{color: white; font-size: 28px;}
   100%{color: #E0D4C0; font-size: 24px;}
 }
 
@@ -71,7 +71,7 @@ h1{
 @keyframes color-change2 {
   0%{color: #E0D4C9; text-shadow: 0 0 4px #302C2E;}
   33%{color: white; font-size: 24px; text-shadow: 0 0 4px #302C2E;}
-  66%{color: white; font-size: 28px; } /* Needs @media */
+  66%{color: white; font-size: 28px;}
   100%{color: #E0D4C0; font-size: 24px;}
 }
 
@@ -188,19 +188,19 @@ h1{
 }
 
 .projects-btn-width{
-  width: 25%
+  width: 25%;
 }
 
 .skills-btn-width{
-  width: 30%
+  width: 30%;
 }
 
 .contact-btn-width{
-  width: 25%
+  width: 25%;
 }
 
 .cv-btn-width{
-  width: 20%
+  width: 20%;
 }
 
 @media (max-width: 510px){
@@ -209,11 +209,11 @@ h1{
   }
 
   .projects-btn-width{
-    width: 50%
+    width: 50%;
   }
 
   .skills-btn-width{
-    width: 90%
+    width: 90%;
   }
 
   .contact-btn-width{
@@ -221,7 +221,7 @@ h1{
   }
 
   .cv-btn-width{
-    width: 20%
+    width: 20%;
   }
 }
 
@@ -329,12 +329,12 @@ td{
   padding: 10px 20px;
 }
 
-.firstTd{
+.first-col{
   width: 25%;
   text-align: center;
 }
 
-.secondTd{
+.second-col{
   width: 75%;
   text-align: left;
 }
@@ -369,13 +369,13 @@ td{
     display: block;
   }
 
-  .firstTd{
+  .first-col{
     width: 100%;
     text-align: center;
     font-size: 14px;
   }
 
-  .secondTd{
+  .second-col{
     width: 100%;
     text-align: left;
     font-size: 12px;
